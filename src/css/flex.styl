@@ -1,0 +1,112 @@
+// You should NEVER add rules to this file
+// It's curated by alyona.petrova@cloudbeds.com and ivan.kharkovsky@cloudbeds.com
+
+.flex,
+[class^='parent-'] > *,
+[class*=' parent-'] > *,
+ul[class^='parent-'] > *,
+ul[class*=' parent-'] > *,
+[class*='jc-'],
+[class*='ai-'],
+[class*='dir-'],
+[class*='f-wrap'],
+.row .flex,
+[class^='parent-'] [class^='parent-'],
+[class^='parent-'] [class*=' parent-'],
+[class*=' parent-'] [class^='parent-'],
+[class*=' parent-'] [class*=' parent-'],
+.f-col
+  display flex
+
+.flex_container
+  justify-content center
+  align-items center
+  text-align center
+  display flex
+  flex-direction column
+
+.parent-height .parent-height,
+.parent-height > .dz-message,
+.parent-height > .dropzone
+  display block
+.parent-height > .dz-preview
+  display inline-block
+
+.dir-row, .parent-dir-row > *
+  flex-direction row
+.dir-column, .f-col, .parent-dir-column > *
+  flex-direction column
+.dir-row-r, .parent-dir-row-r > *
+  flex-direction row-reverse
+.dir-column-r, .parent-dir-column-r > *
+  flex-direction column-reverse
+
+.ai-start, .parent-ai-start > *
+  align-items flex-start
+.ai-end, .parent-ai-start > *
+  align-items flex-end
+.ai-center, .parent-ai-center > *
+  align-items center
+.ai-baseline, .parent-ai-baseline > *
+  align-items baseline
+.ai-stretch, .parent-ai-stretch > *
+  align-items stretch
+
+.jc-start, .parent-jc-start > *
+  justify-content flex-start
+.jc-end, .parent-jc-end > *
+  justify-content flex-end
+.jc-center, .parent-jc-center > *
+  justify-content center
+.jc-between, .parent-jc-between > *
+  justify-content space-between !important
+.jc-around, .parent-jc-around > *
+  justify-content space-around
+.jc-evenly, .parent-jc-evenly > *
+  justify-content space-evenly
+
+.f-wrap, .parent-f-wrap > *
+  flex-wrap wrap
+.f-wrap-r, .parent-f-wrap-r > *
+  flex-wrap wrap-reverse
+.f-nowrap, .parent-f-nowrap > *
+  flex-wrap nowrap
+
+.f-grow-1
+  flex-grow 1 !important
+.f-grow-0
+  flex-grow 0 !important
+.f-grow-unset
+  flex-grow unset !important
+.f-shrink-0
+  flex-shrink 0 !important
+
+[class^='f-col-']
+  position relative
+
+.f-col-1
+  width 100%
+.f-col-2
+  width calc(100% / 2 - 15px)
+.f-col-3
+  width calc(100% / 3 - 15px)
+.f-col-4
+  width calc(100% / 4 - 15px)
+.f-col-5
+  width calc(100% / 5 - 15px)
+.f-col-6
+  width calc(100% / 6 - 15px)
+.f-col-10
+  width calc(100% / 10 - 15px)
+.f-col-2_3
+  width calc(100% / 3 * 2 - 15px)
+.f-col-3_4
+  width calc(100% / 4 * 3 - 15px)
+.full-width-row
+  margin-left -40px
+  margin-right -40px
+  [class^='f-col-']
+    padding-left 40px
+    padding-right 40px
+
+

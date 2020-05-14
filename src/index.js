@@ -1,8 +1,11 @@
-// import Vue from 'vue';
-// import vueCustomElement from 'vue-custom-element';
+import Vue from 'vue';
+import vueCustomElement from 'vue-custom-element';
 import App from './components/App';
 
-// Vue.use(vueCustomElement);
-// Vue.customElement('cb-notification', App);
+import 'font-awesome/css/font-awesome.css';
+import './css/flex.styl';
 
-export default App;
+Vue.use(vueCustomElement);
+Vue.customElement('cb-notification', App);
+
+// export default App;
